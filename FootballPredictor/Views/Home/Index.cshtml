@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Strona główna";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="textInfo">
+    <h2 style="text-align: center"><a style="color: chocolate">PRE-SCORES</a> to innowacyjny system predykcji wyników meczów piłkarskich.</h2>
+    <br/>
+    <div >
+       
+        <img src="~/Images/homePageIMG.jpg" class=" img-response  descriptionImg columnInfo" />
+        
+   
+        Zajmuje się przewidywaniem wyników meczów angielskiej Premier League - ligi, w której w każdym sezonie, od sierpnia do maja, 20 drużyn rywalizuje
+        o tytuł mistrzowski. Trzy pierwsze drużyny uzyskują prawo gry w kolejnym sezonie w Lidze Mistrzów, czwarty zespół awansuje do eliminacji
+        Ligi Mistrzów, natomiast piąty gra w Lidze Europejskiej. Trzy drużyny, które zajmują na koniec sezonu ostatnie miejsca w tabeli spadają z ligi,
+        a ich miejsce zajmują beniaminkowie, którzy awansowali do Premier League z niższej klasy rozgrywek. Za zwycięstwo drużyna otrzymuje 3 punkty
+        do ligowej tabeli, za remis 1, a za przegraną 0. W przypadku równej liczby punktów o kolejności w tabeli decyduje bilans bramek strzelonych
+        i straconych.
+ 
+    </div>
+    <div style="clear:both">
+        <p>
+            <a href="@Url.Action("NextRound")" class="predictionLink">Predykowane wyniki</a> są sukcesywnie aktualizowane do dnia meczu.
+            Skuteczność predykcji jest obliczana jako liczba poprawnie wytypowanych rozstrzygnięć (wskazanie zwycięzcy lub remisu).
+        </p>
+        <p>
+            <b>
+                Elastyczna konstrukcja systemu pozwala na wprowadzenie szeregu udoskonaleń i dalszy rozwój, m.in. dodanie predykcji
+                innych lig <br/> (w szczególności polskiej Ekstraklasy).
+            </b>
+        </p>
+    </div>
+</div>
